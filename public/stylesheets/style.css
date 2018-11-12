@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+  /*background-image: url('images/flag.png');*/
+  background-color: lightblue;
+}
+
+label {
+  width: 100px;
+}
+
+button {
+  margin-right: 15px;
+}

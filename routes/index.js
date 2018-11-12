@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 /* Set up mongoose in order to connect to mongo database */
 var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
+var request = require('request');
 
 mongoose.connect('mongodb://localhost/commentDB', { useNewUrlParser: true }); //Connects to a mongo database called "commentDB"
 
@@ -17,6 +18,11 @@ db.on('error', console.error.bind(console, 'connection error:')); //Checks for c
 db.once('open', function() { //Lets us know when we're connected
   console.log('Connected');
 });
+
+router.get('/questions', function(req, res, next) {
+    var url = "https://opentdb.com/api.php?amount=10";
+    request(url).pipe(res);
+})
 
 /* GET comments from database */
 router.get('/comment', function(req, res, next) {

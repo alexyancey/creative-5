@@ -1,4 +1,18 @@
 $(document).ready(function(){
+  $("#showQuestions").click(function() {
+    var url = "questions";
+    $.getJSON(url, function(data) {
+      console.log(Object.keys(data));
+      for (result in data)
+      {
+        console.log(Object.keys(data[result]));
+        for (question in result)
+        {
+          console.log(Object.keys(data[result][question]));
+        }
+      }
+    })
+  })
   $("#postComment").click(function(){
       var myobj = {Name:$("#name").val(),Comment:$("#comment").val()};
       jobj = JSON.stringify(myobj);

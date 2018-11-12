@@ -9,7 +9,11 @@
 6 silly lifecycle comments@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle comments@0.0.0~start: comments@0.0.0
 8 verbose lifecycle comments@0.0.0~start: unsafe-perm in lifecycle true
+<<<<<<< HEAD
 9 verbose lifecycle comments@0.0.0~start: PATH: /home/ec2-user/.nvm/versions/node/v6.14.4/lib/node_modules/npm/bin/node-gyp-bin:/var/www/html/creative-5/node_modules/.bin:/usr/local/rvm/gems/ruby-2.4.1/bin:/usr/local/rvm/gems/ruby-2.4.1@global/bin:/usr/local/rvm/rubies/ruby-2.4.1/bin:/home/ec2-user/.nvm/versions/node/v6.14.4/bin:/usr/local/bin:/bin:/usr/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+=======
+9 verbose lifecycle comments@0.0.0~start: PATH: /home/ec2-user/.nvm/versions/node/v6.14.4/lib/node_modules/npm/bin/node-gyp-bin:/var/www/html/creative-5/node_modules/.bin:/home/ec2-user/.nvm/versions/node/v6.14.4/bin:/usr/local/rvm/gems/ruby-2.4.1/bin:/usr/local/rvm/gems/ruby-2.4.1@global/bin:/usr/local/rvm/rubies/ruby-2.4.1/bin:/usr/local/bin:/bin:/usr/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/opt/aws/bin:/usr/local/rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+>>>>>>> 297acf4f3301687f24a7f24e13e0cbf4b85e33e0
 10 verbose lifecycle comments@0.0.0~start: CWD: /var/www/html/creative-5
 11 silly lifecycle comments@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle comments@0.0.0~start: Returned: code: 1  signal: null

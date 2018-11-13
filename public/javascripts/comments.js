@@ -10,6 +10,15 @@ $(document).ready(function() {
           console.log(q);
         }
       }
+    });
+
+    $.ajax({
+      url: url,
+      type: "POST",
+      contentType: "application/json; charset=utf-8",
+      success: function(data, textStatus) {
+        $("#questionout").html(textStatus);
+      }
     })
   })
   $("#saveScoreButton").click(function() {

@@ -19,6 +19,30 @@ db.once('open', function() { //Lets us know when we're connected
   console.log('Connected');
 });
 
+router.post('/questions', function(req, res, next) {
+    console.log("POST score route");
+    console.log(req.body);
+    var newscore = new Score(req.body);
+    newscore.save(function(err, result) {
+        if (err) { console.log("Got Error"); }
+        else {
+            console.log("saved worked");
+            console.log(result);
+            res.sendStatus(200);
+        }
+    })
+});
+router.get('/score', function(req, res, next) {
+    console.log("In the GET route");
+    Score.find(function(err, scoreList) { //Calls the find() method on your database
+        if (err) return console.error(err); //If there's an error, print it out
+        else {
+            console.log(scoreList); //Otherwise console log the comments you found
+            res.json(scoreList); //Then send the comments
+        }
+    })
+});
+
 router.get('/questions', function(req, res, next) {
     var url = "https://opentdb.com/api.php?amount=15&category=9&difficulty=easy&type=boolean";
     request(url).pipe(res);

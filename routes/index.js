@@ -23,10 +23,19 @@ router.get('/questions', function(req, res, next) {
     var url = "https://opentdb.com/api.php?amount=15&category=9&difficulty=easy&type=boolean";
     request(url).pipe(res);
     /*var newscore = new Score({Name: "test", Score: "100"});
-    newscore.save(function(err, post) { 
+    newscore.save(function(err, post) {
       if (err) return console.error(err);
       res.sendStatus(200);
     });*/
+})
+
+router.post('/questions', function(req, res, next) {
+  var newscore = new Score({Name: 'test', Score: '100'});
+  newscore.save(function(err, post) {
+    if (err)
+      return console.error(err);
+    res.sendStatus(200);
+  })
 })
 
 module.exports = router;

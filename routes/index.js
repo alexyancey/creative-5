@@ -24,8 +24,9 @@ router.get('/questions', function(req, res, next) {
     request(url).pipe(res);
 })
 
-router.post('/questions', function(req, res, next) {
-  var newscore = new Score({Name: 'test', Score: '100'});
+router.post('/score', function(req, res, next) {
+  console.log(req.body);
+  var newscore = new Score(req.body);
   newscore.save(function(err, post) {
     if (err)
       return console.error(err);

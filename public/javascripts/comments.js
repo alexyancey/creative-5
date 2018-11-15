@@ -101,13 +101,13 @@ $(document).ready(function(){
         $.getJSON('score', function(data) {
             console.log("in scores getJSON");
             console.log(data);
-            var everything = "<ul>";
+            var everything = "<ul class=\"list-group\">";
             for (var comment in data) {
                 com = data[comment];
-                everything += "<li> Name: " + com.Name + " -- Score: " + com.Score + "</li>";
+                everything += "<li class=\"list-group-item\"> Name: " + com.Name + " -- Score: " + com.Score + "</li>";
             }
             everything += "</ul>";
-            $("#currentscore").html(everything);
+            $("#highscores").html(everything);
             console.log("inside comments get");
         })
     })

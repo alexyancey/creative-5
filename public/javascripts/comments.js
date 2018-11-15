@@ -33,7 +33,10 @@ $(document).ready(function(){
     }
     if (current === 15)
     {
-      var myscore = { Name: $("#getname").val(), Score: score };
+      var name = $("#getname").val();
+      if (name === "")
+        name = "Anonymous";
+      var myscore = { Name: name, Score: score };
       console.log(myscore);
       var jsonscore = JSON.stringify(myscore);
 
@@ -44,6 +47,12 @@ $(document).ready(function(){
         contentType: "application/json; charset=utf-8",
         success: function(data, textStatus) {}
       })
+
+      //Change visibility of button
+      $("#btnTrue").css("visibility", "collapse");
+      $("#btnFalse").css("visibility", "collapse");
+
+      $("#scorelabel").html("Final Score");
     }
     //if current is now 15 show the continue button and make the true/false buttons
     //disappear
@@ -61,7 +70,10 @@ $(document).ready(function(){
     }
     if (current === 15)
     {
-      var myscore = { Name: $("#getname").val(), Score: score };
+      var name = $("#getname").val();
+      if (name === "")
+        name = "Anonymous";
+      var myscore = { Name: name, Score: score };
       console.log(myscore);
       var jsonscore = JSON.stringify(myscore);
 
@@ -72,6 +84,12 @@ $(document).ready(function(){
         contentType: "application/json; charset=utf-8",
         success: function(data, textStatus) {}
       })
+
+      //Change visibility of button
+      $("#btnTrue").css("visibility", "collapse");
+      $("#btnFalse").css("visibility", "collapse");
+
+      $("#scorelabel").html("Final Score");
     }
     //if current is now 15 show the continue button and make the true/false buttons
     //disappear

@@ -31,6 +31,20 @@ $(document).ready(function(){
       $("#currentscore").html(score);
       console.log(score);
     }
+    if (current === 15)
+    {
+      var myscore = { Name: $("#getname").val(), Score: score };
+      console.log(myscore);
+      var jsonscore = JSON.stringify(myscore);
+
+      $.ajax({
+        url: "score",
+        type: "POST",
+        data: jsonscore,
+        contentType: "application/json; charset=utf-8",
+        success: function(data, textStatus) {}
+      })
+    }
     //if current is now 15 show the continue button and make the true/false buttons
     //disappear
   })
@@ -45,24 +59,25 @@ $(document).ready(function(){
       $("#currentscore").html(score);
       console.log(score);
     }
+    if (current === 15)
+    {
+      var myscore = { Name: $("#getname").val(), Score: score };
+      console.log(myscore);
+      var jsonscore = JSON.stringify(myscore);
+
+      $.ajax({
+        url: "score",
+        type: "POST",
+        data: jsonscore,
+        contentType: "application/json; charset=utf-8",
+        success: function(data, textStatus) {}
+      })
+    }
     //if current is now 15 show the continue button and make the true/false buttons
     //disappear
   })
 
   //Make a continue button that appears once all questions are done
   //This will be the continue button click event
-  if (current === 15)
-  {
-    var myscore = { Name: $("#getname").val(), Score: score };
-    console.log(myscore);
-    var jsonscore = JSON.stringify(myscore);
 
-    $.ajax({
-      url: "score",
-      type: "POST",
-      data: jsonscore,
-      contentType: "application/json; charset=utf-8",
-      success: function(data, textStatus) {}
-    })
-  }
 });

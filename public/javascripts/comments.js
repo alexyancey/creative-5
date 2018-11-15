@@ -97,5 +97,19 @@ $(document).ready(function(){
 
   //Make a continue button that appears once all questions are done
   //This will be the continue button click event
+    $("#getScores").click(function() {
+        $.getJSON('score', function(data) {
+            console.log("in scores getJSON");
+            console.log(data);
+            var everything = "<ul>";
+            for (var comment in data) {
+                com = data[comment];
+                everything += "<li> Name: " + com.Name + " -- Score: " + com.Score + "</li>";
+            }
+            everything += "</ul>";
+            $("#currentscore").html(everything);
+            console.log("inside comments get");
+        })
+    })
 
 });

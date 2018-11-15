@@ -33,5 +33,15 @@ router.post('/score', function(req, res, next) {
     res.sendStatus(200);
   })
 })
+router.get('/score', function(req, res, next) {
+    console.log("In the GET route");
+    Score.find(function(err, scoreList) { //Calls the find() method on your database
+        if (err) return console.error(err); //If there's an error, print it out
+        else {
+            console.log(scoreList); //Otherwise console log the comments you found
+            res.json(scoreList); //Then send the comments
+        }
+    })
+});
 
 module.exports = router;

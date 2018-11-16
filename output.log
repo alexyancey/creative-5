@@ -1,0 +1,130 @@
+nohup: ignoring input
+Connected
+[0mGET / [36m304 [0m6.275 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m2.479 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.386 ms - -[0m
+[0mGET /questions [32m200 [0m108.130 ms - -[0m
+[0mGET / [32m200 [0m4.245 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m2.017 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.120 ms - 422[0m
+[0mGET /favicon.ico [33m404 [0m9.527 ms - 1507[0m
+[0mGET /questions [32m200 [0m161.845 ms - -[0m
+[0mGET / [32m200 [0m0.706 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.684 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.409 ms - 422[0m
+[0mGET /questions [32m200 [0m225.033 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.905 ms - 1507[0m
+[0mGET / [32m200 [0m0.974 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.665 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.758 ms - 422[0m
+[0mGET /questions [32m200 [0m226.754 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.824 ms - 1507[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m26.506 ms - 73[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 } ]
+[0mGET /score [36m304 [0m4.907 ms - -[0m
+{ Name: 'Anonymous', Score: 7 }
+[0mPOST /score [32m200 [0m31.010 ms - 2[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m2.892 ms - 147[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [36m304 [0m8.126 ms - -[0m
+[0mGET / [32m200 [0m1.278 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.636 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.610 ms - 422[0m
+[0mGET /favicon.ico [33m404 [0m1.010 ms - 1507[0m
+[0mGET /questions [32m200 [0m178.994 ms - -[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m3.789 ms - 147[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [36m304 [0m4.026 ms - -[0m
+[0mGET / [32m200 [0m0.583 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.882 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.513 ms - 422[0m
+[0mGET /favicon.ico [33m404 [0m1.442 ms - 1507[0m
+[0mGET /questions [32m200 [0m156.525 ms - -[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m2.538 ms - 147[0m
+[0mGET / [32m200 [0m0.560 ms - 1059[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.447 ms - 3256[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.388 ms - 422[0m
+[0mGET /favicon.ico [33m404 [0m1.008 ms - 1507[0m
+[0mGET /questions [32m200 [0m154.811 ms - -[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m2.538 ms - 147[0m
+[0mGET / [36m304 [0m0.786 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m3.419 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.294 ms - -[0m
+[0mGET /questions [32m200 [0m225.803 ms - -[0m
+{ Name: 'Ted', Score: 10 }
+[0mPOST /score [32m200 [0m3.727 ms - 2[0m
+In the GET route
+[ { _id: 5bedc803e394a02e004a4573,
+    Name: 'Chester',
+    Score: '8',
+    __v: 0 },
+  { _id: 5bee2c3ae34dca458a0db37c,
+    Name: 'Anonymous',
+    Score: '7',
+    __v: 0 },
+  { _id: 5beeecf6e34dca458a0db37d,
+    Name: 'Ted',
+    Score: '10',
+    __v: 0 } ]
+[0mGET /score [32m200 [0m3.944 ms - 216[0m

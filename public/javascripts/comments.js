@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var url = "questions";
   var questions = [];
   var answers = [];
@@ -6,11 +6,9 @@ $(document).ready(function(){
   var score = 0;
   $.getJSON(url, function(data) {
     console.log(data);
-    for (result in data)
-    {
+    for (result in data) {
       console.log(data[result]);
-      for (q in data[result])
-      {
+      for (q in data[result]) {
         var question = data[result][q]['question'];
         var answer = data[result][q]['correct_answer'];
         questions.push(question);
@@ -22,8 +20,7 @@ $(document).ready(function(){
   });
 
   $("#btnTrue").click(() => {
-    if (current < 15)
-    {
+    if (current < 15) {
       if (answers[current] === "True")
         score++;
       current++;
@@ -31,8 +28,7 @@ $(document).ready(function(){
       $("#currentscore").html(score);
       console.log(score);
     }
-    if (current === 15)
-    {
+    if (current === 15) {
       var name = $("#getname").val();
       if (name === "")
         name = "Anonymous";
@@ -59,8 +55,7 @@ $(document).ready(function(){
   })
 
   $("#btnFalse").click(() => {
-    if (current < 15)
-    {
+    if (current < 15) {
       if (answers[current] === "False")
         score++;
       current++;
@@ -68,8 +63,7 @@ $(document).ready(function(){
       $("#currentscore").html(score);
       console.log(score);
     }
-    if (current === 15)
-    {
+    if (current === 15) {
       var name = $("#getname").val();
       if (name === "")
         name = "Anonymous";
@@ -97,19 +91,23 @@ $(document).ready(function(){
 
   //Make a continue button that appears once all questions are done
   //This will be the continue button click event
-    $("#getScores").click(function() {
-        $.getJSON('score', function(data) {
-            console.log("in scores getJSON");
-            console.log(data);
-            var everything = "<ul class=\"list-group\">";
-            for (var comment in data) {
-                com = data[comment];
-                everything += "<li class=\"list-group-item\"> Name: " + com.Name + " -- Score: " + com.Score + "</li>";
-            }
-            everything += "</ul>";
-            $("#highscores").html(everything);
-            console.log("inside comments get");
-        })
+  $("#getScores").click(function() {
+    $.getJSON('score', function(data) {
+      console.log("in scores getJSON");
+      console.log(data);
+      var array = data;
+      array.sort(function(a, b) {
+        return b.Score - a.Score;
+      });
+      var everything = "<ul class=\"list-group\">";
+      for (var comment in array) {
+        com = array[comment];
+        everything += "<li class=\"list-group-item\"> Name: " + com.Name + " -- Score: " + com.Score + "</li>";
+      }
+      everything += "</ul>";
+      $("#highscores").html(everything);
+      console.log("inside comments get");
     })
+  })
 
 });
